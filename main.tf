@@ -9,6 +9,12 @@ resource "azurerm_resource_group" "rg_name2" {
 }
 
 
+resource "azurerm_resource_group" "rg_name3" {
+  name="mk-rg3"
+  location = "east us"
+}
+
+
 resource "azurerm_resource_group" "rg_name" {
   name="mk-rg"
   location = "east us"
