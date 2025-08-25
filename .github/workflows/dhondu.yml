@@ -1,0 +1,17 @@
+name: 'dhondu-maharaj'
+on: 
+  push:
+    branches:
+      - 'feature/**'
+      - 'main'
+      - 'hotfix/**'
+
+jobs:
+  Dhondu-Mahraj:
+    name: dhondu-maharaj-2
+    runs-on:  dhondu-maharj-1
+    steps:
+      - name: dhondu-maharaj-rocks
+      - run: echo dhondu mahara ji
+    
+  
