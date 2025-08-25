@@ -12,6 +12,6 @@ jobs:
     runs-on: dhondhu-maharaj-2
     steps:
       - name: dhondu-maharaj-rocks
-      - run: echo dhondu mahara ji
+        run: echo dhondu mahara ji
     
   
