@@ -8,8 +8,8 @@ on:
 
 jobs:
   Dhondu-Mahraj:
-    name: dhondu-maharaj-2
-    runs-on:  dhondu-maharj-1
+    name: dhondu-maharaj-3
+    runs-on: dhondhu-maharaj-2
     steps:
       - name: dhondu-maharaj-rocks
       - run: echo dhondu mahara ji
