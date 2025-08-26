@@ -37,6 +37,8 @@ jobs:
       # Step 6: Terraform Plan
       - name: Terraform Plan
         run: terraform plan -out=tfplan
+      - name: Terraform Show
+        run: terraform show -no-color tfplan   
 
       # Step 7: Terraform Apply (sirf main branch par chalega)
       - name: Terraform Apply
