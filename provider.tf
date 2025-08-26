@@ -11,6 +11,13 @@ version = ">3.0.0"
 provider "azurerm" {
 
     features {}
-    subscription_id ="377674hhd4773ggg4777477ggg3" 
+    subscription_id ="2c279754-9ded-4271-a952-14fe81a08ff4" 
   
+}
+
+
+
+resource "azurerm_resource_group" "rg_name_1" {
+  name="mk-rg_1"
+  location = "east us"
 }
