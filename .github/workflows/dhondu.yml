@@ -10,6 +10,13 @@ jobs:
   terraform:
     runs-on: dhondhu-maharaj-2
 
+    # 👇 Yahan ek hi jagah ENV define kar diye
+    env:
+      ARM_CLIENT_ID:        ${{ fromJson(secrets.mukesh).clientId }}
+      ARM_CLIENT_SECRET:    ${{ fromJson(secrets.mukesh).clientSecret }}
+      ARM_SUBSCRIPTION_ID:  ${{ fromJson(secrets.mukesh).subscriptionId }}
+      ARM_TENANT_ID:        ${{ fromJson(secrets.mukesh).tenantId }}
+
     steps:
       # Step 1: Checkout repo
       - uses: actions/checkout@v4
@@ -24,7 +31,7 @@ jobs:
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
         with:
-          terraform_version: 1.9.6   # apne version ke hisaab se update kar lena
+          terraform_version: 1.9.6
 
       # Step 4: Terraform Init
       - name: Terraform Init
@@ -37,6 +44,7 @@ jobs:
       # Step 6: Terraform Plan
       - name: Terraform Plan
         run: terraform plan -out=tfplan
+
       - name: Terraform Show
         run: terraform show -no-color tfplan   
 
