@@ -8,7 +8,7 @@ on:
 
 jobs:
   terraform:
-    runs-on: ubuntu-latest
+    runs-on: dhondhu-maharaj-2
 
     steps:
       # Step 1: Checkout repo
