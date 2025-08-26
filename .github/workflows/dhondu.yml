@@ -12,10 +12,10 @@ jobs:
     runs-on: dhondhu-maharaj-2
     steps:
       - name: dhondu-maharaj-rocks
-        run: echo dhondu mahara ji
+        run: echo 'dhondu mahara ji'
 
       - name: dhondu-maharaj-rocks-1
-        run: echo dhondu mahara ji-1
+        run: echo 'dhondu mahara ji-1'
 
   Dhondu-Mahraj_job_2:
     name: dhondu-maharaj-job_2_A
